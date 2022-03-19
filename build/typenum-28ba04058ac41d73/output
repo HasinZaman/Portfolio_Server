@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\Users\hasin\Documents\Porfolio\SingleThreadServer\target\release\build\typenum-28ba04058ac41d73\out\consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=C:\Users\hasin\Documents\Porfolio\SingleThreadServer\target\release\build\typenum-28ba04058ac41d73\out\op.rs
