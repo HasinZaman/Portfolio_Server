@@ -1,0 +1,36 @@
+(
+    address: "localhost",
+    port : 8080,
+    paths : {
+        "localhost" : (
+            path : "tmp",
+            allow : [
+                "html",
+                "css",
+                "js",
+                "jpg",
+                "png",
+                "svg"
+            ]
+        ),
+        "subdomain.localhost" : (
+            path : "subdomain",
+            allow : [
+                "html"
+            ]
+        ),
+        "doc.localhost" : (
+            path : "doc",
+            allow : [
+                "html",
+                "css",
+                "js",
+                "jpg",
+                "png",
+                "txt",
+                "woff",
+                "svg"
+            ]
+        ),
+    }
+)
