@@ -1,1 +1,0 @@
-initSidebarItems({"fn":[["get_file_content_bytes","get_file_content_bytes returns vector of bytes of file contents"],["get_file_content_string","get_file_content_string returns string content of a file"],["parse","parse method converts a file path into a PathBuf"]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"fn":[["main",""]],"mod":[["server","Server module is responsible for the start-up and handling of server requests"],["sql_reader",""]]});

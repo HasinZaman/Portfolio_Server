@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["MethodLogic","MethodLogic stores the method required for any given HTTP method"]]});
