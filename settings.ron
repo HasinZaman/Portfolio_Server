@@ -3,7 +3,7 @@
     port: 80,
     paths : {
         "localhost" : (
-            path : "root\\Portfolio_Website",
+            path : "~/Portfolio_Website",
             allow : [
                 "html",
                 "css",
