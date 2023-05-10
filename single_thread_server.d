@@ -1,1 +1,0 @@
-/mnt/c/Users/hasin/Documents/Portfolio/Portfolio_Server_Not_Compiled/target/release/single_thread_server: /mnt/c/Users/hasin/Documents/Portfolio/Portfolio_Server_Not_Compiled/src/action.rs /mnt/c/Users/hasin/Documents/Portfolio/Portfolio_Server_Not_Compiled/src/logging.rs /mnt/c/Users/hasin/Documents/Portfolio/Portfolio_Server_Not_Compiled/src/main.rs

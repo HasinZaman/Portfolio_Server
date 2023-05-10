@@ -1,0 +1,26 @@
+[package]
+name = "single_thread_server"
+version = "0.2.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pipelined_server = {git="https://github.com/HasinZaman/pipelined_server"}
+mysql = "*"
+cyclic_data_types = {git="https://github.com/HasinZaman/cyclic_data_structures", branch="0.2.4"}
+log4rs = "*"
+log = "*"
+petgraph = "*"
+regex = "*"
+hex-rgb = "*"
+pulldown-cmark = "*"
+serde = "*"
+serde_json = "1.0"
+
+paste = "*"
+
+#snake logic
+# log = "0.4.0"
+# env_logger = "0.9.0"
+# rand = "0.8.4"

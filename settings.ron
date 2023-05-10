@@ -1,37 +1,19 @@
 (
-    address: "localhost",
-    port : 8080,
+    address: "207.180.204.253",
+    port: 80,
     paths : {
         "localhost" : (
-            path : "tmp",
+            path : "root\\Portfolio_Website",
             allow : [
                 "html",
                 "css",
                 "js",
                 "jpg",
                 "png",
-                "svg"
+                "svg",
+                "ico"
             ]
         ),
-        "subdomain.localhost" : (
-            path : "subdomain",
-            allow : [
-                "html"
-            ]
-        ),
-        "doc.localhost" : (
-            path : "doc",
-            allow : [
-                "html",
-                "css",
-                "js",
-                "jpg",
-                "png",
-                "txt",
-                "woff",
-                "svg"
-            ]
-        ),
-    }
+    },
     timeout: 5,
 )
