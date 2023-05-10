@@ -25,6 +25,8 @@ fn main() {
 
     let setting = ServerSetting::load();
 
+    println!("{setting:#?}");
+
     let builder = Builder::default()
         .set_settings(setting.clone())
         .set_parser(default::parser::<64, 1024>)
