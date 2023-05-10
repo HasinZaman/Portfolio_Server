@@ -471,6 +471,7 @@ pub fn get(
     setting: &ServerSetting,
     utility_thread: &UtilitySender,
 ) -> Result<Response, ResponseStatusCode> {
+    trace!("{request:#?}");
     let Request(method, heading) = request;
 
     let Method::Get { file } = method else{
