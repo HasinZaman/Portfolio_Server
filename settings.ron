@@ -2,7 +2,7 @@
     address: "207.180.204.253",
     port: 80,
     paths : {
-        "localhost" : (
+        "207.180.204.253" : (
             path : "~/Portfolio_Website",
             allow : [
                 "html",
