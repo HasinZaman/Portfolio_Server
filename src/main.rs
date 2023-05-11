@@ -36,5 +36,5 @@ fn main() {
 
     let server = Server::new(setting, utility_thread, builder);
 
-    server.run::<1>();
+    server.run::<2>();
 }

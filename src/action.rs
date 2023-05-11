@@ -489,7 +489,7 @@ pub fn get(
     };
 
     trace!("{host_path} := {allowed_extension:#?}");
-
+    
     let file : PathBuf = {
         let ext: &str;
         let mut file_path = PathBuf::from(&host_path);
