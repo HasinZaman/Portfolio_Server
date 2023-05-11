@@ -493,11 +493,13 @@ pub fn get(
     let file = {
         let ext: &str;
         let mut file_path = PathBuf::from(&host_path);
-        let file = file.trim_matches('/').replace("/", "\\");
+        let file = file.trim_matches('/');
         file_path.push(&file);
+        
         if file_path.extension().is_none() {
             file_path.push("index.html");
         }
+
         ext = file_path.extension().unwrap().to_str().unwrap();
 
         if !allowed_extension.iter().any(|allowed| allowed == ext) {
