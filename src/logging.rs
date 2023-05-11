@@ -24,7 +24,7 @@ pub fn logger_init() -> Handle {
             Root::builder()
                 .appender(LOG_FILE_TAG)
                 .appender(STD_OUT)
-                .build(LevelFilter::Error),
+                .build(LevelFilter::Trace),
         )
         .unwrap();
 
