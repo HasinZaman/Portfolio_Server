@@ -89,7 +89,7 @@ pub fn generate_utility_thread() -> (UtilitySender, JoinHandle<()>) {
                 }
             }
 
-            if db_request_pool.len() < 4 && !db_request_next.is_empty() {
+            if db_request_pool.len() < 1 && !db_request_next.is_empty() {
                 let (statement, params, map_func, sender) = db_request_next.pop_front().unwrap();
 
                 db_request_pool.push(thread::spawn(move || {
@@ -164,7 +164,7 @@ pub fn generate_utility_thread() -> (UtilitySender, JoinHandle<()>) {
                 }));
             }
 
-            if file_request_pool.len() < 4 && !file_request_next.is_empty() {
+            if file_request_pool.len() < 1 && !file_request_next.is_empty() {
                 let (path, byte_cond, sender) = file_request_next.pop_front().unwrap();
 
                 file_request_pool.push(thread::spawn(move || {
@@ -489,7 +489,7 @@ pub fn get(
     };
 
     trace!("{host_path} := {allowed_extension:#?}");
-    
+
     let file : PathBuf = {
         let ext: &str;
         let mut file_path = PathBuf::from(&host_path);
