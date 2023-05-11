@@ -3,7 +3,7 @@
     port: 80,
     paths : {
         "207.180.204.253" : (
-            path : "~/Portfolio_Website",
+            path : "/root/Portfolio_Website",
             allow : [
                 "html",
                 "css",
