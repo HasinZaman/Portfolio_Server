@@ -883,7 +883,7 @@ pub fn get(
                             }),
                         );
 
-                        trace!("dev log: {dev_logs:#?}");
+                        trace!("dev log");
                         let mut articles: Vec<String> = Vec::new();
 
                         let start_node =
