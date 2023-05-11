@@ -1,4 +1,4 @@
-use log::LevelFilter;
+use log::{LevelFilter, Level};
 use log4rs::{
     append::{console::ConsoleAppender, file::FileAppender},
     config::{Appender, Root},
@@ -24,7 +24,7 @@ pub fn logger_init() -> Handle {
             Root::builder()
                 .appender(LOG_FILE_TAG)
                 .appender(STD_OUT)
-                .build(LevelFilter::max_level()),
+                .build(LevelFilter::Error),
         )
         .unwrap();
 
