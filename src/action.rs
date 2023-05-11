@@ -490,7 +490,7 @@ pub fn get(
 
     trace!("{host_path} := {allowed_extension:#?}");
 
-    let file = {
+    let file : PathBuf = {
         let ext: &str;
         let mut file_path = PathBuf::from(&host_path);
         let file = file.trim_matches('/').replace("\\","/");
@@ -506,7 +506,7 @@ pub fn get(
             return Err(ResponseStatusCode::Forbidden);
         }
 
-        file_path.to_string_lossy().replace("\\", "/").into::<PathBuf>()
+        file_path.to_string_lossy().replace("\\", "/").into()
     };
 
     trace!("file:{:?}", file);
