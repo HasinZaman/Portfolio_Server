@@ -29,7 +29,7 @@ fn main() {
 
     let builder = Builder::default()
         .set_settings(setting.clone())
-        .set_parser(default::parser::<64, 1024>)
+        .set_parser(default::parser::<264, 1024>)
         .set_action(action_boi)
         .set_compression(default::no_compression)
         .set_utility_thread(utility_thread.0.clone());
