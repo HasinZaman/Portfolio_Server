@@ -650,7 +650,7 @@ pub fn get(
                                 file_path.push("template");
                                 file_path.push("dev_log.article.html.template");
 
-                                file_path
+                                file_path.to_string_lossy().replace("\\", "/").into()
                             },
                             bytes: false,
                         },
@@ -666,7 +666,7 @@ pub fn get(
                                 file_path.push("template");
                                 file_path.push("dev_log.html.template");
 
-                                file_path
+                                file_path.to_string_lossy().replace("\\", "/").into()
                             },
                             bytes: false,
                         },
