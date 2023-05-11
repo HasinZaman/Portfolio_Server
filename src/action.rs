@@ -630,9 +630,15 @@ pub fn get(
                         )
                     })
                     .filter(|proj| {
+                        // trace!(
+                        //     "\"{}/{}/index.html\"",
+                        //     host_path.replace("\\", "/"),
+                        //     proj.3.replace(" ", "_")
+                        // );
+                        // trace!("{file:?}");
                         format!(
-                            "\"{}\\\\{}\\\\index.html\"",
-                            host_path.replace("\\", "\\\\"),
+                            "\"{}/{}/index.html\"",
+                            host_path.replace("\\", "/"),
                             proj.3.replace(" ", "_")
                         ) == format!("{file:?}")
                     })
